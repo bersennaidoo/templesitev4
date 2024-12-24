@@ -1,0 +1,28 @@
+.c-home {
+  &__banner {
+    background: url(/images/home-bg3.jpg) right bottom no-repeat,
+      url(/images/home-bg3.jpg) left bottom no-repeat,
+      url(/images/home-bg3.jpg) right top no-repeat,
+      url(/images/home-bg3.jpg) left top no-repeat,
+      url(/images/home-bg.jpg) center no-repeat;
+    background-size: 100px 100px, 100px 100px, 100px 100px, 100px 100px, cover;
+    height: 600px;
+  }
+  &__border {
+    border: 30px solid transparent;
+    padding: 15px;
+  }
+  &__home-bg {
+    background-color: radial-gradient(green, gold) 30 round;
+    background-image: url(/images/temple-bg5.jpg);
+    background-repeat: no-repeat;
+    background-size: 80rem 58rem;
+    inline-size: 80rem;
+    block-size: 58rem;
+  }
+  &__established {
+    padding-block-start: 12.5rem;
+    font-family: cursive;
+    font-size: 1.8rem;
+  }
+}
