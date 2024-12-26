@@ -1,4 +1,5 @@
 // Custom brand colors
+/*
 $custom-colors: (
   "primary-100": lighten($primary, 90%), 
   "primary-200": lighten($primary, 75%),
@@ -37,4 +38,4 @@ $custom-colors: (
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $body-bg: lighten($primary, 75%);
-$body-color: darken($primary, 100%);
+$body-color: darken($primary, 100%); */

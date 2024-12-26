@@ -1,13 +1,36 @@
-import React, { useState, useEffect } from "react";
+import React from "react"
+import {
+  createBrowserRouter,
+  // createRoutesFromElements,
+  RouterProvider,
+  // Route,
+} from 'react-router-dom';
 
-function AppScript() {
+import HomePage from './pages/HomePage';
+import RootLayout from './RootLayout';
 
-  return (
-    <div className="container">
-      Event Overview
-    </div>
-  )
+// const routeDefinitions = createRoutesFromElements(
+//   <Route>
+//     <Route path="/" element={<HomePage />} />
+//     <Route path="/products" element={<ProductsPage />} />
+//   </Route>
+// );
 
+const router = createBrowserRouter([
+  {
+    path: '/blog',
+    element: <RootLayout />,
+    children: [
+      { path: '/blog', element: <HomePage /> },
+    ],
+  }
+]);
+
+// const router = createBrowserRouter(routeDefinitions);
+
+function App() {
+  return <RouterProvider router={router} />;
 }
 
-export default AppScript;
+export default App;
+
