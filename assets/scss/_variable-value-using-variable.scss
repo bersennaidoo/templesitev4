@@ -35,7 +35,7 @@ $custom-colors: (
 );
 
 // Merge custom theme
-$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors: map-merge($theme-colors, $custom-colors); */
 
 $body-bg: lighten($primary, 75%);
-$body-color: darken($primary, 100%); */
+$body-color: darken($primary, 100%);

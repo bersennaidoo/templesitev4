@@ -115,10 +115,7 @@ $custom-colors: (
 );
 
 // Merge custom theme
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
-$body-bg: lighten($primary, 75%);
-$body-color: darken($primary, 100%); */
+$theme-colors: map-merge($theme-colors, $custom-colors); */
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
@@ -193,10 +190,10 @@ $body-color: darken($primary, 100%); */
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #fff;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-color: black;
+  --bs-body-color-rgb: 0, 0, 0;
+  --bs-body-bg: #e4ffe4;
+  --bs-body-bg-rgb: 227.5, 255, 227.5;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -9886,6 +9883,11 @@ textarea.form-control-lg {
   padding-block-start: 12.5rem;
   font-family: cursive;
   font-size: 1.8rem; }
+
+.c-chairman-bg {
+  background-image: url(/img/page-header-5.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /********** Template CSS **********/
 :root {

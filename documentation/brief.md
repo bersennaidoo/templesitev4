@@ -1,7 +1,7 @@
 # Temple Brief
 
 Build a website for a temple, that allows the members to automate tasks for publishing events, excepting questions from devotees and booking a priest. Devotees must be able to look up upcoming events and post content associated with
-temple subject matter. The site must allow devotees to make donations. The site will have a home, about, gallery, events, contact us content rich pages and task driven pages for a blog for upcoming events.
+temple subject matter. The site must allow devotees to make donations. The site will have a home, about, gallery, events, contact us content rich pages and task driven pages for a blog for upcoming events. Make the elevate UI with respect to temple context with fancy borders, backgrounds etc...
 
 ## Stories
 
@@ -23,16 +23,47 @@ temple subject matter. The site must allow devotees to make donations. The site 
 
 - As a temple member i want answer questions from devotees
 
+## Layout
+
+- Use bootstraps 12 column grid system for layout
+
+## Color
+
+- green - primary
+- golden - secondary
+- darkest - body copy
+- light - background
+
+## Typography
+
+- san-serif - display text
+- serif - body copy
+- novelty font - text overlays
+- 16px - display text
+- 14px - body copy
+
+## Spacing
+
+- 1.5rem - margins, padding, height, width
+
+## Imagery
+
+- home - banner with text overlay, chairmans photo, grid of gallery photos
+- about - banner with text overlay, temple photos
+- contact - banner with text overlay
+- gallery - banner with text overlay, temple festival photos, temple photos
+- events - banner with text overlay, photos of events
+
 ## Pages
 
 ### Header
 
-- navigation
+- navigation make it fancy with respect temple context
 - logo
 
 ### Footer
 
-- repeated navigation, social links
+- repeated navigation, social links, make it fancy with respect to temple context
 
 ### Home
 
@@ -46,21 +77,18 @@ temple subject matter. The site must allow devotees to make donations. The site 
 
 ### About
 
-- section with temple history
+- section with temple history, images of temple
 
 ### Gallery
 
-- sections for photos and videos
+- sections for photos and videos grid
 
 ### Events
 
-- section displaying events chronologically
+- section displaying events chronologically grid
+- interactivity for create,list,read,edit,delete events
 
 ### Contact Us
 
 - section with contact form
 - section for donations
-
-### Blog
-
-- list,create,delete,update posts on various temple subjects

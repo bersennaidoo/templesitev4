@@ -9,11 +9,9 @@ const HomePage: FC<HomePageProps> = (props: HomePageProps) => {
 
     return (
         <div className="row">
-            <div className="col-sm-12 col-md-6">
-                <Link to="#"><img src="/img/team-1.jpg" className="img-fluid" /></Link>
-            </div>
-             <div className="col-sm-12 col-md-6">
-                <Link to="#"><img src="/img/team-1.jpg" className="img-fluid" /></Link>
+             <div className="col-sm-12 d-flex">
+                <Link to="#"><img src="/img/page-header-5.png" className="img-fluid" /></Link>
+                <p>Temple events for your consumption</p>
             </div>
         </div>
     )

@@ -29438,10 +29438,10 @@
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   var HomePage = (props) => {
     const {} = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "row", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "col-sm-12 col-md-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "#", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: "/img/team-1.jpg", className: "img-fluid" }) }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "col-sm-12 col-md-6", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "#", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: "/img/team-1.jpg", className: "img-fluid" }) }) })
-    ] });
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "col-sm-12 d-flex", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "#", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: "/img/page-header-5.png", className: "img-fluid" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Temple events for your consumption" })
+    ] }) });
   };
   var HomePage_default = HomePage;
 
