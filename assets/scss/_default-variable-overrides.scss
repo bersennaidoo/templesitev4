@@ -2,27 +2,7 @@
 
 $primary: #006400;
 $secondary: #DAA520;
-$light: #F1F3FA;
-$dark: #1C2035;
+$light: lighten(#006400, 100%); 
+$dark: darken(#006400, 100%);
 
-$font-family-base: 'Shojumaru Regular';
 
-$headings-font-family: 'Shojumaru Regular';
-
-$headings-color: $dark;
-
-$headings-font-weight: 500;
-
-$display-font-weight: 700;
-
-$enable-responsive-font-sizes: true;
-
-$border-radius: 8px;
-
-$border-radius-sm: $border-radius;
-
-$border-radius-lg: $border-radius;
-
-$link-decoration: none;
-
-$enable-negative-margins: true;

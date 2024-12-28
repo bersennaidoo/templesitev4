@@ -1,21 +1,22 @@
-.c-home {
-  &__home-bg {
-    background-color: radial-gradient(green, gold) 30 round;
-    background-image: url(/images/temple-bg5.jpg);
-    background-repeat: no-repeat;
-    background-size: 80rem 58rem;
-    inline-size: 80rem;
-    block-size: 58rem;
-  }
-  &__established {
-    padding-block-start: 12.5rem;
-    font-family: cursive;
-    font-size: 1.8rem;
-  }
+ .c-nav {
+  background-image: url(/img/circle.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
 }
 
-.c-chairman-bg {
-  background-image: url(/img/page-header-5.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.c-home {
+  border: 2px solid;
+  border-image-width: 12px;
+  border-image-slice: 33.3333%;
+  padding: 12px;
+  border-image-source: url(/img/header-design.svg);
+  background-color: $primary;
+  &__chairman {
+    border: 2px solid;
+    border-image-width: 12px;
+    border-image-slice: 33.3333%;
+    padding: 12px;
+    border-image-source: url(/img/header-design.svg);
+  }
 }

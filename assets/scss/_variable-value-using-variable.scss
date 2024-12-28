@@ -1,5 +1,4 @@
 // Custom brand colors
-/*
 $custom-colors: (
   "primary-100": lighten($primary, 90%), 
   "primary-200": lighten($primary, 75%),
@@ -35,7 +34,13 @@ $custom-colors: (
 );
 
 // Merge custom theme
-$theme-colors: map-merge($theme-colors, $custom-colors); */
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
-$body-bg: lighten($primary, 75%);
+$body-bg: lighten($primary, 80%);
 $body-color: darken($primary, 100%);
+
+$font-family-base: 'Bodoni Book', serif;
+$font-size-base: 1.125rem;
+$line-height-base: 1.5;
+
+$headings-font-family: Helvetica, sans-serif;

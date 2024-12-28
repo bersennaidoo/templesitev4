@@ -1,17 +1,20 @@
-import React from "react"
-import { Outlet } from 'react-router-dom';
+import React, { FC, useEffect, useState } from "react";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+import axios from "axios";
+import EventListScript from "./pages/EventListScript";
+import { Event } from "./domain/models/eventModel";
 
-import Overview from './components/Overview';
+type RootLayoutProps = {};
 
-function RootLayout() {
+const RootLayout: FC<RootLayoutProps> = (props: RootLayoutProps) => {
   return (
     <>
-      <Overview />
-      <main className="container mt-5">
+      <main>
         <Outlet />
       </main>
+      <EventListScript />
     </>
   );
-}
+};
 
 export default RootLayout;

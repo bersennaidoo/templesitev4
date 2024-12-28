@@ -1,36 +1,31 @@
-import React from "react"
+import React, { useEffect, useState } from "react";
 import {
-  createBrowserRouter,
-  // createRoutesFromElements,
   RouterProvider,
-  // Route,
-} from 'react-router-dom';
-
-import HomePage from './pages/HomePage';
-import RootLayout from './RootLayout';
-
-// const routeDefinitions = createRoutesFromElements(
-//   <Route>
-//     <Route path="/" element={<HomePage />} />
-//     <Route path="/products" element={<ProductsPage />} />
-//   </Route>
-// );
+  createBrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import axios from "axios";
+import { Event } from "./domain/models/eventModel";
+import RootLayout from "./RootLayout";
+import HomePage from "./pages/HomePage";
 
 const router = createBrowserRouter([
   {
-    path: '/blog',
+    path: '/events',
     element: <RootLayout />,
     children: [
-      { path: '/blog', element: <HomePage /> },
+      { path: "/events", element: <HomePage /> },
     ],
-  }
+  },
 ]);
 
-// const router = createBrowserRouter(routeDefinitions);
-
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+    <RouterProvider router={router} />
+    </> 
+  );
 }
 
 export default App;
-
