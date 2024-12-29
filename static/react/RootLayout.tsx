@@ -8,12 +8,16 @@ type RootLayoutProps = {};
 
 const RootLayout: FC<RootLayoutProps> = (props: RootLayoutProps) => {
   return (
-    <>
-      <main>
-        <Outlet />
-      </main>
-      <EventListScript />
-    </>
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-12 col-md-8">
+          <EventListScript />
+        </div>
+        <main className="col-sm-12 col-md-4">
+          <Outlet />
+        </main>
+      </div>
+    </div>
   );
 };
 

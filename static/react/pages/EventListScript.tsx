@@ -25,9 +25,7 @@ const EventListScript: FC<EventListScriptProps> = (
     }, []);
 
   return (
-    <div className="container">
       <EventListPresenter events={events} />
-    </div>
   );
 };
 

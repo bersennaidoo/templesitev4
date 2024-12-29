@@ -11,15 +11,15 @@ export const seedHero = (list: Hero[]) => {
 };
 const heroes: Hero[] = [
   {
-    id: "Cavady April",
+    id: "Cavady",
     image: "/img/stub/400x300.png",
-    name: "Cavady April",
+    name: "Cavady",
     description: "Cavady festival",
   },
   {
     id: "Mariammen",
     image: "/img/stub/400x300.png",
-    name: "Mariammunun",
+    name: "Mariammen",
     description: "Mariammen",
   },
   {
@@ -29,22 +29,22 @@ const heroes: Hero[] = [
     description: "festival of lights",
   },
   {
-    id: "Tamil new year",
+    id: "Tamil",
     image: "/img/stub/400x300.png",
-    name: "Tamil new year",
+    name: "Tamil",
     description: "new celebration",
   },
   {
-    id: "21 day prayer",
+    id: "21day",
     image: "/img/stub/400x300.png",
-    name: "21 day prayer",
+    name: "21day",
     description: "fasting prayer",
   },
   {
-    id: "Good Luck Prayer",
+    id: "GoodLuck",
     image: "/img/stub/400x300.png",
-    name: "Good Luck Prayer",
-    description: "Prayer for health wealth",
+    name: "GoodLuck",
+    description: "Prayer health",
   },
 ];
 
