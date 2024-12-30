@@ -8,15 +8,15 @@ type RootLayoutProps = {};
 
 const RootLayout: FC<RootLayoutProps> = (props: RootLayoutProps) => {
   return (
-    <div className="container">
+    <div className="container bg-primary mt-3">
       <div className="row">
-        <div className="col-sm-12 col-md-8">
-          <EventListScript />
-        </div>
-        <main className="col-sm-12 col-md-4">
-          <Outlet />
-        </main>
-      </div>
+      <div className="col-sm-12 col-md-8">
+      <EventListScript />
+      </div> 
+      <main className="col-sm-12 col-md-4">
+        <Outlet />
+      </main>
+      </div> 
     </div>
   );
 };

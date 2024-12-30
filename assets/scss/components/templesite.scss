@@ -20,3 +20,11 @@
     border-image-source: url(/img/header-design.svg);
   }
 }
+
+.event-list {
+    border: 2px solid;
+    border-image-width: 12px;
+    border-image-slice: 33.3333%;
+    padding: 12px;
+    border-image-source: url(/img/header-design.svg);
+}
