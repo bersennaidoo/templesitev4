@@ -11892,4 +11892,5 @@ textarea.form-control-lg {
   border-image-width: 12px;
   border-image-slice: 33.3333%;
   padding: 12px;
-  border-image-source: url(/img/header-design.svg); }
+  border-image-source: url(/img/header-design.svg);
+  background-color: #caffca; }

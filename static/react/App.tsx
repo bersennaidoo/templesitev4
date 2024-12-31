@@ -12,6 +12,7 @@ import RootLayout from "./RootLayout";
 import HomePage from "./pages/HomePage";
 import EventScript from "./pages/EventScript";
 import EventAddScript from "./pages/EventAddScript";
+import EventDeleteScript from "./pages/EventDeleteScript";
 
 /*const router = createBrowserRouter([
   {
@@ -36,6 +37,7 @@ function App() {
         <Route path=":id" element={<EventScript />} />
       </Route>
       <Route path="/events/add" element={<EventAddScript />} />
+      <Route path="/events/delete/:id" element={<EventDeleteScript />} />
     </Routes>
   );
 }

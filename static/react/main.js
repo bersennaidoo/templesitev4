@@ -1085,7 +1085,7 @@
             }
             return dispatcher.useContext(Context);
           }
-          function useState6(initialState) {
+          function useState7(initialState) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useState(initialState);
           }
@@ -1097,7 +1097,7 @@
             var dispatcher = resolveDispatcher();
             return dispatcher.useRef(initialValue);
           }
-          function useEffect6(create, deps) {
+          function useEffect7(create, deps) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useEffect(create, deps);
           }
@@ -1880,7 +1880,7 @@
           exports.useContext = useContext3;
           exports.useDebugValue = useDebugValue;
           exports.useDeferredValue = useDeferredValue;
-          exports.useEffect = useEffect6;
+          exports.useEffect = useEffect7;
           exports.useId = useId;
           exports.useImperativeHandle = useImperativeHandle;
           exports.useInsertionEffect = useInsertionEffect;
@@ -1888,7 +1888,7 @@
           exports.useMemo = useMemo3;
           exports.useReducer = useReducer;
           exports.useRef = useRef3;
-          exports.useState = useState6;
+          exports.useState = useState7;
           exports.useSyncExternalStore = useSyncExternalStore;
           exports.useTransition = useTransition;
           exports.version = ReactVersion;
@@ -2384,9 +2384,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React6 = require_react();
+          var React7 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React6.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React7.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -2435,7 +2435,7 @@
           var HostPortal = 4;
           var HostComponent = 5;
           var HostText = 6;
-          var Fragment3 = 7;
+          var Fragment4 = 7;
           var Mode = 8;
           var ContextConsumer = 9;
           var ContextProvider = 10;
@@ -3592,7 +3592,7 @@
                 return "DehydratedFragment";
               case ForwardRef:
                 return getWrappedName$1(type, type.render, "ForwardRef");
-              case Fragment3:
+              case Fragment4:
                 return "Fragment";
               case HostComponent:
                 return type;
@@ -3993,7 +3993,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React6.Children.forEach(props.children, function(child) {
+                  React7.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -12021,7 +12021,7 @@
               }
             }
             function updateFragment2(returnFiber, current2, fragment, lanes, key) {
-              if (current2 === null || current2.tag !== Fragment3) {
+              if (current2 === null || current2.tag !== Fragment4) {
                 var created = createFiberFromFragment(fragment, returnFiber.mode, lanes, key);
                 created.return = returnFiber;
                 return created;
@@ -12424,7 +12424,7 @@
                 if (child.key === key) {
                   var elementType = element.type;
                   if (elementType === REACT_FRAGMENT_TYPE) {
-                    if (child.tag === Fragment3) {
+                    if (child.tag === Fragment4) {
                       deleteRemainingChildren(returnFiber, child.sibling);
                       var existing = useFiber(child, element.props.children);
                       existing.return = returnFiber;
@@ -17900,7 +17900,7 @@
                 var _resolvedProps2 = workInProgress2.elementType === type ? _unresolvedProps2 : resolveDefaultProps(type, _unresolvedProps2);
                 return updateForwardRef(current2, workInProgress2, type, _resolvedProps2, renderLanes2);
               }
-              case Fragment3:
+              case Fragment4:
                 return updateFragment(current2, workInProgress2, renderLanes2);
               case Mode:
                 return updateMode(current2, workInProgress2, renderLanes2);
@@ -18172,7 +18172,7 @@
               case SimpleMemoComponent:
               case FunctionComponent:
               case ForwardRef:
-              case Fragment3:
+              case Fragment4:
               case Mode:
               case Profiler:
               case ContextConsumer:
@@ -22433,7 +22433,7 @@
             return fiber;
           }
           function createFiberFromFragment(elements, mode, lanes, key) {
-            var fiber = createFiber(Fragment3, elements, key, mode);
+            var fiber = createFiber(Fragment4, elements, key, mode);
             fiber.lanes = lanes;
             return fiber;
           }
@@ -24887,21 +24887,21 @@
         utils.extend(instance, context);
         return instance;
       }
-      var axios4 = createInstance(defaults);
-      axios4.Axios = Axios;
-      axios4.create = function create(instanceConfig) {
-        return createInstance(mergeConfig(axios4.defaults, instanceConfig));
+      var axios5 = createInstance(defaults);
+      axios5.Axios = Axios;
+      axios5.create = function create(instanceConfig) {
+        return createInstance(mergeConfig(axios5.defaults, instanceConfig));
       };
-      axios4.Cancel = require_Cancel();
-      axios4.CancelToken = require_CancelToken();
-      axios4.isCancel = require_isCancel();
-      axios4.all = function all(promises) {
+      axios5.Cancel = require_Cancel();
+      axios5.CancelToken = require_CancelToken();
+      axios5.isCancel = require_isCancel();
+      axios5.all = function all(promises) {
         return Promise.all(promises);
       };
-      axios4.spread = require_spread();
-      axios4.isAxiosError = require_isAxiosError();
-      module.exports = axios4;
-      module.exports.default = axios4;
+      axios5.spread = require_spread();
+      axios5.isAxiosError = require_isAxiosError();
+      module.exports = axios5;
+      module.exports.default = axios5;
     }
   });
 
@@ -24919,7 +24919,7 @@
       if (true) {
         (function() {
           "use strict";
-          var React6 = require_react();
+          var React7 = require_react();
           var REACT_ELEMENT_TYPE = Symbol.for("react.element");
           var REACT_PORTAL_TYPE = Symbol.for("react.portal");
           var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
@@ -24945,7 +24945,7 @@
             }
             return null;
           }
-          var ReactSharedInternals = React6.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React7.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function error(format) {
             {
               {
@@ -25795,11 +25795,11 @@
               return jsxWithValidation(type, props, key, false);
             }
           }
-          var jsx11 = jsxWithValidationDynamic;
-          var jsxs7 = jsxWithValidationStatic;
+          var jsx14 = jsxWithValidationDynamic;
+          var jsxs9 = jsxWithValidationStatic;
           exports.Fragment = REACT_FRAGMENT_TYPE;
-          exports.jsx = jsx11;
-          exports.jsxs = jsxs7;
+          exports.jsx = jsx14;
+          exports.jsxs = jsxs9;
         })();
       }
     }
@@ -27841,7 +27841,8 @@
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h1", { children: event?.name }),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("img", { src: event?.image, className: "img-fluid" }),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: event?.description }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: event?.date })
+      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: event?.date }),
+      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Link, { to: `/events/delete/${event?.id}`, className: "text-white", children: "Delete Event" }) })
     ] }) }) });
   };
   var EventPresenter_default = EventPresenter;
@@ -28013,24 +28014,79 @@
   };
   var EventAddScript_default = EventAddScript;
 
-  // static/react/App.tsx
+  // static/react/pages/EventDeleteScript.tsx
+  var import_react4 = __toESM(require_react());
+  var import_axios4 = __toESM(require_axios2());
+
+  // static/react/components/EventDeletePresenter.tsx
   var import_jsx_runtime9 = __toESM(require_jsx_runtime());
+  var EventDeletePresenter = (props) => {
+    const { id, onDelete } = props;
+    const navigate = useNavigate();
+    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "container bg-primary-400 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "row justify-content-center p-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h5", { className: "", children: "Delete Event" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { children: "Please Confirm." }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-sm-12", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("button", { type: "button", className: "btn btn-primary me-3", onClick: () => onDelete(id), children: "Delete" }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("button", { type: "button", className: "btn btn-outline-primary", onClick: () => navigate(`/events/${id}`), children: "Back" })
+      ] })
+    ] }) });
+  };
+  var EventDeletePresenter_default = EventDeletePresenter;
+
+  // static/react/components/EventSuccessPresenter.tsx
+  var import_jsx_runtime10 = __toESM(require_jsx_runtime());
+  var EventSuccessPresenter = (props) => {
+    const { closeSuccess } = props;
+    const navigate = useNavigate();
+    return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "container mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "alert alert-success p-3", role: "alert", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("button", { type: "button", className: "btn btn-primary btn-lg", onClick: closeSuccess, children: "Close!" }) }) });
+  };
+  var EventSuccessPresenter_default = EventSuccessPresenter;
+
+  // static/react/pages/EventDeleteScript.tsx
+  var import_jsx_runtime11 = __toESM(require_jsx_runtime());
+  var EventDeleteScript = (props) => {
+    const {} = props;
+    const navigate = useNavigate();
+    const params = useParams();
+    const [success, setSuccess] = (0, import_react4.useState)(false);
+    const [remove, setRemove] = (0, import_react4.useState)(true);
+    const onDeleteHandler = (id) => {
+      import_axios4.default.delete(`/api/heroes/${id}`).then((res) => {
+        setSuccess(!success);
+        setRemove(!remove);
+      });
+    };
+    const closeSuccess = () => {
+      setSuccess(!success);
+      navigate("/events");
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)(import_jsx_runtime11.Fragment, { children: [
+      success && /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(EventSuccessPresenter_default, { closeSuccess }),
+      remove && /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(EventDeletePresenter_default, { id: params.id, onDelete: onDeleteHandler })
+    ] });
+  };
+  var EventDeleteScript_default = EventDeleteScript;
+
+  // static/react/App.tsx
+  var import_jsx_runtime12 = __toESM(require_jsx_runtime());
   function App() {
-    return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(Routes, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(Route, { path: "/events", element: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(RootLayout_default, {}), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Route, { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(HomePage_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Route, { path: ":id", element: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(EventScript_default, {}) })
+    return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)(Routes, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)(Route, { path: "/events", element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(RootLayout_default, {}), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Route, { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(HomePage_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Route, { path: ":id", element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(EventScript_default, {}) })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Route, { path: "/events/add", element: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(EventAddScript_default, {}) })
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Route, { path: "/events/add", element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(EventAddScript_default, {}) }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Route, { path: "/events/delete/:id", element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(EventDeleteScript_default, {}) })
     ] });
   }
   var App_default = App;
 
   // static/react/main.tsx
-  var import_jsx_runtime10 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime13 = __toESM(require_jsx_runtime());
   var root = import_client.default.createRoot(document.getElementById("root"));
   root.render(
-    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(App_default, {}) })
+    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(App_default, {}) })
   );
 })();
 /*! Bundled license information:

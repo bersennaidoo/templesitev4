@@ -19,6 +19,11 @@ const EventPresenter: FC<EventPresenterProps> = (
           <img src={event?.image} className="img-fluid" />
           <p>{event?.description}</p>
           <p>{event?.date}</p>
+          <button type="button" className="btn btn-primary btn-sm">
+            <Link to={`/events/delete/${event?.id}`} className="text-white">
+              Delete Event
+            </Link>
+          </button>
         </div>
       </div>
     </div>
