@@ -25796,10 +25796,10 @@
             }
           }
           var jsx14 = jsxWithValidationDynamic;
-          var jsxs9 = jsxWithValidationStatic;
+          var jsxs10 = jsxWithValidationStatic;
           exports.Fragment = REACT_FRAGMENT_TYPE;
           exports.jsx = jsx14;
-          exports.jsxs = jsxs9;
+          exports.jsxs = jsxs10;
         })();
       }
     }
@@ -28039,7 +28039,10 @@
   var EventSuccessPresenter = (props) => {
     const { closeSuccess } = props;
     const navigate = useNavigate();
-    return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "container mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "alert alert-success p-3", role: "alert", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("button", { type: "button", className: "btn btn-primary btn-lg", onClick: closeSuccess, children: "Close!" }) }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "container mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "alert alert-success p-3", role: "alert", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("h3", { children: "Success!" }),
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("button", { type: "button", className: "btn btn-primary btn-lg", onClick: closeSuccess, children: "Close!" })
+    ] }) });
   };
   var EventSuccessPresenter_default = EventSuccessPresenter;
 

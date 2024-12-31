@@ -11868,10 +11868,23 @@ textarea.form-control-lg {
     display: none !important; } }
 
 .c-nav {
-  background-image: url(/img/circle.png);
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: 15px 15px; }
+  background: url(/img/circle.png) top left repeat-x, url(/img/circle.png) bottom left repeat-x, url(/img/circle.png) top left repeat-y, url(/img/circle.png) bottom right repeat-y;
+  background-size: 10px 10px; }
+  .c-nav__link {
+    border-width: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-style: solid;
+    border-color: #DAA520;
+    margin: 2.5rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    background-color: #006400; }
+  .c-nav__logo {
+    padding: 1rem;
+    padding-bottom: 2.5rem; }
+  .c-nav__ul {
+    padding: 0.5rem; }
 
 .c-home {
   border: 2px solid;

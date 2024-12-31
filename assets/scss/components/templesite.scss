@@ -1,8 +1,26 @@
  .c-nav {
-  background-image: url(/img/circle.png);
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: 15px 15px;
+  background: url(/img/circle.png) top left repeat-x, url(/img/circle.png) bottom left repeat-x, url(/img/circle.png) top left repeat-y, url(/img/circle.png) bottom right repeat-y;
+  background-size: 10px 10px;
+  &__link {
+    border-width: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-style: solid;
+    border-color: $secondary;
+    margin: 2.5rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    background-color: $primary;
+  }
+  &__logo {
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  &__img {
+  }
+  &__ul {
+    padding: 0.5rem;
+  }
 }
 
 .c-home {
