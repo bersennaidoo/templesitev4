@@ -36,7 +36,7 @@ $custom-colors: (
 // Merge custom theme
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-$body-bg: lighten($primary, 80%);
+$body-bg: $primary;
 $body-color: darken($primary, 100%);
 
 $font-family-base: 'Bodoni Book', serif;

@@ -24,12 +24,6 @@ const HomePage: FC<HomePageProps> = (props: HomePageProps) => {
               Add Event
             </Link>
           </button>
-           <button type="button" className="btn btn-primary btn-sm">
-            <Link to="/events/delete" className="text-white">
-              Delete Event
-            </Link>
-          </button>
-
           </div> 
         </div>
       </div>

@@ -2435,7 +2435,7 @@
           var HostPortal = 4;
           var HostComponent = 5;
           var HostText = 6;
-          var Fragment4 = 7;
+          var Fragment5 = 7;
           var Mode = 8;
           var ContextConsumer = 9;
           var ContextProvider = 10;
@@ -3592,7 +3592,7 @@
                 return "DehydratedFragment";
               case ForwardRef:
                 return getWrappedName$1(type, type.render, "ForwardRef");
-              case Fragment4:
+              case Fragment5:
                 return "Fragment";
               case HostComponent:
                 return type;
@@ -12021,7 +12021,7 @@
               }
             }
             function updateFragment2(returnFiber, current2, fragment, lanes, key) {
-              if (current2 === null || current2.tag !== Fragment4) {
+              if (current2 === null || current2.tag !== Fragment5) {
                 var created = createFiberFromFragment(fragment, returnFiber.mode, lanes, key);
                 created.return = returnFiber;
                 return created;
@@ -12424,7 +12424,7 @@
                 if (child.key === key) {
                   var elementType = element.type;
                   if (elementType === REACT_FRAGMENT_TYPE) {
-                    if (child.tag === Fragment4) {
+                    if (child.tag === Fragment5) {
                       deleteRemainingChildren(returnFiber, child.sibling);
                       var existing = useFiber(child, element.props.children);
                       existing.return = returnFiber;
@@ -17900,7 +17900,7 @@
                 var _resolvedProps2 = workInProgress2.elementType === type ? _unresolvedProps2 : resolveDefaultProps(type, _unresolvedProps2);
                 return updateForwardRef(current2, workInProgress2, type, _resolvedProps2, renderLanes2);
               }
-              case Fragment4:
+              case Fragment5:
                 return updateFragment(current2, workInProgress2, renderLanes2);
               case Mode:
                 return updateMode(current2, workInProgress2, renderLanes2);
@@ -18172,7 +18172,7 @@
               case SimpleMemoComponent:
               case FunctionComponent:
               case ForwardRef:
-              case Fragment4:
+              case Fragment5:
               case Mode:
               case Profiler:
               case ContextConsumer:
@@ -22433,7 +22433,7 @@
             return fiber;
           }
           function createFiberFromFragment(elements, mode, lanes, key) {
-            var fiber = createFiber(Fragment4, elements, key, mode);
+            var fiber = createFiber(Fragment5, elements, key, mode);
             fiber.lanes = lanes;
             return fiber;
           }
@@ -27806,10 +27806,32 @@
   // static/react/RootLayout.tsx
   var import_jsx_runtime3 = __toESM(require_jsx_runtime());
   var RootLayout = (props) => {
-    return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container bg-primary mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "row", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "col-sm-12 col-md-8", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(EventListScript_default, {}) }),
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("main", { className: "col-sm-12 col-md-4", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Outlet, {}) })
-    ] }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+        "div",
+        {
+          className: "container-fluid page-header py-5 mb-5 wow fadeIn",
+          "data-wow-delay": "0.1s",
+          children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "container text-center py-5", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h1", { className: "display-2 text-white mb-4 animated slideInDown", children: "Events" }),
+            /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("nav", { "aria-label": "breadcrumb animated slideInDown", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("ol", { className: "breadcrumb justify-content-center mb-0", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("li", { className: "breadcrumb-item", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", children: "Home" }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("li", { className: "breadcrumb-item", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "#", children: "Pages" }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+                "li",
+                {
+                  className: "breadcrumb-item text-primary",
+                  "aria-current": "page",
+                  children: "Events"
+                }
+              )
+            ] }) })
+          ] })
+        }
+      ) }),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container bg-primary mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(EventListScript_default, {}) }) }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("main", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Outlet, {}) }) }) })
+    ] });
   };
   var RootLayout_default = RootLayout;
 
@@ -27821,10 +27843,7 @@
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h1", { children: "Your Events !" }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("img", { src: "/img/stub/400x300.png", className: "img-fluid" }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "d-flex justify-content-between", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Link, { to: "/events/add", className: "text-white", children: "Add Event" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Link, { to: "/events/delete", className: "text-white", children: "Delete Event" }) })
-      ] })
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "d-flex justify-content-between", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Link, { to: "/events/add", className: "text-white", children: "Add Event" }) }) })
     ] }) }) });
   };
   var HomePage_default = HomePage;
