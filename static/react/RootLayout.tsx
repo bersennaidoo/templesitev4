@@ -37,7 +37,7 @@ const RootLayout: FC<RootLayoutProps> = (props: RootLayoutProps) => {
           </div>
         </div>
       </div>
-      <div className="container bg-primary mt-3">
+      <div className="container bg-primary-500 mt-3">
         <div className="row">
           <div className="col-sm-12">
             <EventListScript />

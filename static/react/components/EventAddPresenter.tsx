@@ -53,19 +53,6 @@ const EventAddPresenter: FC<EventAddPresenterProps> = (
             </div>
             <div className="mb-3">
               <label htmlFor="exampleFormControlInput1" className="form-label">
-                Image:
-              </label>
-              <input
-                value={image}
-                onChange={onImageChange}
-                type="text"
-                className="form-control"
-                id="exampleFormControlInput1"
-                name="Image Name"
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="exampleFormControlInput1" className="form-label">
                 Date:
               </label>
               <input

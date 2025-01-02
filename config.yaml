@@ -22,6 +22,8 @@ module:
       target: "static"
     - source: "node_modules/bootstrap"
       target: "assets/scss/bootstrap"
+    - source: "node_modules/hover.css"
+      target: "static/hover"
     - source: "node_modules"
       target: "static/js"
     - source: "node_modules/@fortawesome/fontawesome-free"

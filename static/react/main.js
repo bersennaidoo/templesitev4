@@ -27829,7 +27829,7 @@
           ] })
         }
       ) }),
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container bg-primary mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(EventListScript_default, {}) }) }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container bg-primary-500 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(EventListScript_default, {}) }) }) }),
       /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("main", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Outlet, {}) }) }) })
     ] });
   };
@@ -27839,9 +27839,9 @@
   var import_jsx_runtime4 = __toESM(require_jsx_runtime());
   var HomePage = (props) => {
     const {} = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "container event-list p-3 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "col-sm-12", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "container bg-primary-500 p-3 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "col-sm-12", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h1", { children: "Your Events !" }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("img", { src: "/img/stub/400x300.png", className: "img-fluid" }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("img", { src: "/img/stub/temple-events.png", className: "img-fluid" }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "d-flex justify-content-between", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Link, { to: "/events/add", className: "text-white", children: "Add Event" }) }) })
     ] }) }) });
@@ -27915,20 +27915,6 @@
             className: "form-control",
             id: "exampleFormControlInput1",
             name: "Event Name"
-          }
-        )
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mb-3", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("label", { htmlFor: "exampleFormControlInput1", className: "form-label", children: "Image:" }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
-          "input",
-          {
-            value: image,
-            onChange: onImageChange,
-            type: "text",
-            className: "form-control",
-            id: "exampleFormControlInput1",
-            name: "Image Name"
           }
         )
       ] }),
@@ -28019,7 +28005,7 @@
       evt.preventDefault();
       const details = {
         "name": name,
-        "image": image,
+        "image": "/img/stub/temple-events.png",
         "date": date,
         "summary": summary,
         "description": description

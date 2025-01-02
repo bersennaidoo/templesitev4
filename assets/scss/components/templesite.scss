@@ -1,7 +1,7 @@
  .c-header {
   //background: url(/img/sections-bg-4) top left repeat-x, url(/img/sections-bg-4.png) bottom left repeat-x, url(/img/sections-bg-4.png) top left repeat-y, url(/img/sections-bg-4.png) bottom right repeat-y;
   //background-size: 10px 10px;
-  border-width: 10px;
+  border-width: 5px;
   border-style: solid;
   border-color: $secondary;
   background-image: url(/img/sections-bg-4.png);
@@ -34,7 +34,7 @@
 }
 
 .c-message {
-  border-width: 10px;
+  border-width: 3px;
   border-style: solid;
   border-color: $secondary;
   border-top-left-radius: 20px;
@@ -43,11 +43,17 @@
   background-repeat: no-repeat;
   background-position: cover;
   &__img {
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
     border-color: $secondary;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
+  }
+  &__divider {
+    border-block-start-width: 2px;
+    border-block-start-style: solid;
+    border-block-start-color: $secondary;
+    margin-block-end: 2rem;
   }
 }
 

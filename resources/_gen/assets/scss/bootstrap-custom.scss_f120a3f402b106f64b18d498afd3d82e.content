@@ -11868,7 +11868,7 @@ textarea.form-control-lg {
     display: none !important; } }
 
 .c-header {
-  border-width: 10px;
+  border-width: 5px;
   border-style: solid;
   border-color: #DAA520;
   background-image: url(/img/sections-bg-4.png);
@@ -11895,7 +11895,7 @@ textarea.form-control-lg {
   padding-top: 55px; }
 
 .c-message {
-  border-width: 10px;
+  border-width: 3px;
   border-style: solid;
   border-color: #DAA520;
   border-top-left-radius: 20px;
@@ -11904,11 +11904,16 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: cover; }
   .c-message__img {
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
     border-color: #DAA520;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px; }
+  .c-message__divider {
+    border-block-start-width: 2px;
+    border-block-start-style: solid;
+    border-block-start-color: #DAA520;
+    margin-block-end: 2rem; }
 
 body {
   background-image: url(/img/main-bg-1.png);

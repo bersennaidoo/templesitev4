@@ -7,11 +7,11 @@ const HomePage: FC<HomePageProps> = (props: HomePageProps) => {
   const {} = props;
 
   return (
-    <div className="container event-list p-3 mt-3">
+    <div className="container bg-primary-500 p-3 mt-3">
       <div className="row">
         <div className="col-sm-12">
           <h1>Your Events !</h1>
-          <img src="/img/stub/400x300.png" className="img-fluid" />
+          <img src="/img/stub/temple-events.png" className="img-fluid" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
             repellendus tenetur sapiente accusantium labore praesentium odio,

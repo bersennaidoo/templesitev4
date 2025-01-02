@@ -50,7 +50,7 @@ const EventAddScript: FC<EventAddScriptProps> = (
 
         const details = {
             "name": name,
-            "image": image,
+            "image": "/img/stub/temple-events.png",
             "date": date,
             "summary": summary,
             "description": description,

@@ -12,7 +12,7 @@ export const seedHero = (list: Hero[]) => {
 const heroes: Hero[] = [
   {
     id: "Cavady",
-    image: "/img/stub/400x300.png",
+    image: "/img/stub/temple-events.png",
     name: "Cavady",
     date: "12/10/2025",
     summary: "Cavady Festival",
@@ -20,7 +20,7 @@ const heroes: Hero[] = [
   },
   {
     id: "Mariammen",
-    image: "/img/stub/400x300.png",
+    image: "/img/stub/temple-events.png",
     name: "Mariammen",
     date: "24/11/2025",
     summary: "Mariammen",
@@ -28,7 +28,7 @@ const heroes: Hero[] = [
   },
   {
     id: "Diwali",
-    image: "/img/stub/400x300.png",
+    image: "/img/stub/temple-events.png",
     name: "Diwali",
     date: "24/10/2025",
     summary: "Festival of lights",
@@ -36,7 +36,7 @@ const heroes: Hero[] = [
   },
   {
     id: "Tamil",
-    image: "/img/stub/400x300.png",
+    image: "/img/stub/temple-events.png",
     name: "Tamil",
     date: "10/06/2025",
     summary: "new celebration",
@@ -44,7 +44,7 @@ const heroes: Hero[] = [
   },
   {
     id: "21day",
-    image: "/img/stub/400x300.png",
+    image: "/img/stub/temple-events.png",
     name: "21day",
     date: "10/07/2025",
     summary: "fasting prayer",
@@ -52,7 +52,7 @@ const heroes: Hero[] = [
   },
   {
     id: "GoodLuck",
-    image: "/img/stub/400x300.png",
+    image: "/img/stub/temple-events.png",
     name: "GoodLuck",
     date: "11/07/2025",
     summary: "Prayer health",
