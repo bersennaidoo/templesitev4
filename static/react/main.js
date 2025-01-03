@@ -27842,7 +27842,8 @@
     return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "container bg-primary-500 p-3 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "col-sm-12", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h1", { children: "Your Events !" }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("img", { src: "/img/stub/temple-events.png", className: "img-fluid" }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." })
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "d-flex justify-content-between", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Link, { to: "/events/auth/add", className: "text-white", children: "Add Event" }) }) })
     ] }) }) });
   };
   var HomePage_default = HomePage;
