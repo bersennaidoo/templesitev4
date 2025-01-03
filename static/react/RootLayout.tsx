@@ -16,7 +16,7 @@ const RootLayout: FC<RootLayoutProps> = (props: RootLayoutProps) => {
         >
           <div className="container text-center py-5">
             <h1 className="display-2 text-white mb-4 animated slideInDown">
-              Events
+              
             </h1>
             <nav aria-label="breadcrumb animated slideInDown">
               <ol className="breadcrumb justify-content-center mb-0">

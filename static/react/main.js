@@ -27813,7 +27813,7 @@
           className: "container-fluid page-header py-5 mb-5 wow fadeIn",
           "data-wow-delay": "0.1s",
           children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "container text-center py-5", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h1", { className: "display-2 text-white mb-4 animated slideInDown", children: "Events" }),
+            /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h1", { className: "display-2 text-white mb-4 animated slideInDown" }),
             /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("nav", { "aria-label": "breadcrumb animated slideInDown", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("ol", { className: "breadcrumb justify-content-center mb-0", children: [
               /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("li", { className: "breadcrumb-item", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/", children: "Home" }) }),
               /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("li", { className: "breadcrumb-item", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "#", children: "Pages" }) }),
@@ -28095,35 +28095,58 @@
     const navigate = useNavigate();
     const [username, setUsername] = (0, import_react5.useState)();
     const [password, setPassword] = (0, import_react5.useState)();
-    return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("h1", { children: "Login Page" }),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("p", { children: "You need to log in. (hint: try fred/password)" }),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("label", { htmlFor: "username", children: "Username:" }),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
-        "input",
-        {
-          id: "username",
-          name: "username",
-          type: "text",
-          value: username,
-          onChange: (evt) => setUsername(evt.target.value)
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("br", {}),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("label", { htmlFor: "password", children: "Password:" }),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
-        "input",
-        {
-          id: "password",
-          name: "password",
-          type: "password",
-          value: password,
-          onChange: (evt) => setPassword(evt.target.value)
-        }
-      ),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("br", {}),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("button", { onClick: () => login(username, password), children: "Login" }),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("button", { onClick: () => navigate("/events"), children: "Back" })
+    return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "container bg-secondary-200 c-message mt-5 mb-5", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("h1", { className: "text-center mt-3", style: { fontFamily: "cursive" }, children: "Login Page" }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "row justify-content-center", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "col-sm-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "mb-3", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("label", { htmlFor: "exampleFormControlInput1", className: "form-label", children: "Username:" }),
+            /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+              "input",
+              {
+                id: "username",
+                name: "username",
+                type: "text",
+                value: username,
+                onChange: (evt) => setUsername(evt.target.value),
+                className: "form-control bg-primary-200"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "mb-3", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("label", { htmlFor: "exampleFormControlTextarea1", className: "form-label", children: "Password:" }),
+            /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+              "input",
+              {
+                id: "password",
+                name: "password",
+                type: "password",
+                value: password,
+                onChange: (evt) => setPassword(evt.target.value),
+                className: "form-control bg-primary-200"
+              }
+            )
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "container mb-5", children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "row justify-content-center", children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "col-sm-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+            "button",
+            {
+              className: "btn btn-secondary btn-lg me-3",
+              onClick: () => login(username, password),
+              children: "Login"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+            "button",
+            {
+              className: "btn btn-outline-secondary btn-lg",
+              onClick: () => navigate("/events"),
+              children: "Back"
+            }
+          )
+        ] }) }) })
+      ] })
     ] });
   };
   var LoginPresenter_default = LoginPresenter;
