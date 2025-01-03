@@ -26,7 +26,7 @@ const EventListPresenter: FC<EventListPresenterProps> = (
               </Link>
             </button>
             <button type="button" className="btn btn-primary btn-sm">
-              <Link to="/events/add" className="text-white">
+              <Link to="/events/auth/add" className="text-white">
                 Add Event
               </Link>
             </button>

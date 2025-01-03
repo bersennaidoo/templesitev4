@@ -14,7 +14,7 @@ const EventDeletePresenter: FC<EventDeletePresenterProps> = (
   const navigate = useNavigate();
 
   return (
-    <div className="container bg-primary-400 mt-3">
+    <div className="container bg-primary-400 delete-evt mt-3">
       <div className="row justify-content-center p-3">
         <div className="col-sm-12">
           <h5 className="">Delete Event</h5>

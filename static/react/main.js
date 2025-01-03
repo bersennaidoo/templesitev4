@@ -1085,7 +1085,7 @@
             }
             return dispatcher.useContext(Context);
           }
-          function useState7(initialState) {
+          function useState9(initialState) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useState(initialState);
           }
@@ -1097,7 +1097,7 @@
             var dispatcher = resolveDispatcher();
             return dispatcher.useRef(initialValue);
           }
-          function useEffect7(create, deps) {
+          function useEffect8(create, deps) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useEffect(create, deps);
           }
@@ -1880,7 +1880,7 @@
           exports.useContext = useContext3;
           exports.useDebugValue = useDebugValue;
           exports.useDeferredValue = useDeferredValue;
-          exports.useEffect = useEffect7;
+          exports.useEffect = useEffect8;
           exports.useId = useId;
           exports.useImperativeHandle = useImperativeHandle;
           exports.useInsertionEffect = useInsertionEffect;
@@ -1888,7 +1888,7 @@
           exports.useMemo = useMemo3;
           exports.useReducer = useReducer;
           exports.useRef = useRef3;
-          exports.useState = useState7;
+          exports.useState = useState9;
           exports.useSyncExternalStore = useSyncExternalStore;
           exports.useTransition = useTransition;
           exports.version = ReactVersion;
@@ -2384,9 +2384,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React7 = require_react();
+          var React8 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React7.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React8.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -2435,7 +2435,7 @@
           var HostPortal = 4;
           var HostComponent = 5;
           var HostText = 6;
-          var Fragment5 = 7;
+          var Fragment6 = 7;
           var Mode = 8;
           var ContextConsumer = 9;
           var ContextProvider = 10;
@@ -3592,7 +3592,7 @@
                 return "DehydratedFragment";
               case ForwardRef:
                 return getWrappedName$1(type, type.render, "ForwardRef");
-              case Fragment5:
+              case Fragment6:
                 return "Fragment";
               case HostComponent:
                 return type;
@@ -3993,7 +3993,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React7.Children.forEach(props.children, function(child) {
+                  React8.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -12021,7 +12021,7 @@
               }
             }
             function updateFragment2(returnFiber, current2, fragment, lanes, key) {
-              if (current2 === null || current2.tag !== Fragment5) {
+              if (current2 === null || current2.tag !== Fragment6) {
                 var created = createFiberFromFragment(fragment, returnFiber.mode, lanes, key);
                 created.return = returnFiber;
                 return created;
@@ -12424,7 +12424,7 @@
                 if (child.key === key) {
                   var elementType = element.type;
                   if (elementType === REACT_FRAGMENT_TYPE) {
-                    if (child.tag === Fragment5) {
+                    if (child.tag === Fragment6) {
                       deleteRemainingChildren(returnFiber, child.sibling);
                       var existing = useFiber(child, element.props.children);
                       existing.return = returnFiber;
@@ -17900,7 +17900,7 @@
                 var _resolvedProps2 = workInProgress2.elementType === type ? _unresolvedProps2 : resolveDefaultProps(type, _unresolvedProps2);
                 return updateForwardRef(current2, workInProgress2, type, _resolvedProps2, renderLanes2);
               }
-              case Fragment5:
+              case Fragment6:
                 return updateFragment(current2, workInProgress2, renderLanes2);
               case Mode:
                 return updateMode(current2, workInProgress2, renderLanes2);
@@ -18172,7 +18172,7 @@
               case SimpleMemoComponent:
               case FunctionComponent:
               case ForwardRef:
-              case Fragment5:
+              case Fragment6:
               case Mode:
               case Profiler:
               case ContextConsumer:
@@ -22433,7 +22433,7 @@
             return fiber;
           }
           function createFiberFromFragment(elements, mode, lanes, key) {
-            var fiber = createFiber(Fragment5, elements, key, mode);
+            var fiber = createFiber(Fragment6, elements, key, mode);
             fiber.lanes = lanes;
             return fiber;
           }
@@ -24919,7 +24919,7 @@
       if (true) {
         (function() {
           "use strict";
-          var React7 = require_react();
+          var React8 = require_react();
           var REACT_ELEMENT_TYPE = Symbol.for("react.element");
           var REACT_PORTAL_TYPE = Symbol.for("react.portal");
           var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
@@ -24945,7 +24945,7 @@
             }
             return null;
           }
-          var ReactSharedInternals = React7.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React8.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function error(format) {
             {
               {
@@ -25795,11 +25795,11 @@
               return jsxWithValidation(type, props, key, false);
             }
           }
-          var jsx14 = jsxWithValidationDynamic;
-          var jsxs10 = jsxWithValidationStatic;
+          var jsx17 = jsxWithValidationDynamic;
+          var jsxs11 = jsxWithValidationStatic;
           exports.Fragment = REACT_FRAGMENT_TYPE;
-          exports.jsx = jsx14;
-          exports.jsxs = jsxs10;
+          exports.jsx = jsx17;
+          exports.jsxs = jsxs11;
         })();
       }
     }
@@ -27781,7 +27781,7 @@
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: evt.summary }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "d-flex justify-content-between", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: `/events/${evt.id}`, className: "text-white", children: "View Event" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "/events/add", className: "text-white", children: "Add Event" }) })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "/events/auth/add", className: "text-white", children: "Add Event" }) })
       ] })
     ] }, i)) }) });
   };
@@ -27842,8 +27842,7 @@
     return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "container bg-primary-500 p-3 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "col-sm-12", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h1", { children: "Your Events !" }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("img", { src: "/img/stub/temple-events.png", className: "img-fluid" }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "d-flex justify-content-between", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Link, { to: "/events/add", className: "text-white", children: "Add Event" }) }) })
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." })
     ] }) }) });
   };
   var HomePage_default = HomePage;
@@ -27861,7 +27860,7 @@
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("img", { src: event?.image, className: "img-fluid" }),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: event?.description }),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: event?.date }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Link, { to: `/events/delete/${event?.id}`, className: "text-white", children: "Delete Event" }) })
+      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Link, { to: `/events/auth/delete/${event?.id}`, className: "text-white", children: "Delete Event" }) })
     ] }) }) });
   };
   var EventPresenter_default = EventPresenter;
@@ -28028,7 +28027,7 @@
   var EventDeletePresenter = (props) => {
     const { id, onDelete } = props;
     const navigate = useNavigate();
-    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "container bg-primary-400 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "row justify-content-center p-3", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "container bg-primary-400 delete-evt mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "row justify-content-center p-3", children: [
       /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h5", { className: "", children: "Delete Event" }) }),
       /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { children: "Please Confirm." }) }),
       /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-sm-12", children: [
@@ -28044,9 +28043,17 @@
   var EventSuccessPresenter = (props) => {
     const { closeSuccess } = props;
     const navigate = useNavigate();
-    return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "container mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "alert alert-success p-3", role: "alert", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "container delete-evt mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "alert alert-success p-3", role: "alert", children: [
       /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("h3", { children: "Success!" }),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("button", { type: "button", className: "btn btn-primary btn-lg", onClick: closeSuccess, children: "Close!" })
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+        "button",
+        {
+          type: "button",
+          className: "btn btn-primary btn-lg",
+          onClick: closeSuccess,
+          children: "Close!"
+        }
+      )
     ] }) });
   };
   var EventSuccessPresenter_default = EventSuccessPresenter;
@@ -28076,25 +28083,96 @@
   };
   var EventDeleteScript_default = EventDeleteScript;
 
-  // static/react/App.tsx
+  // static/react/components/auth/SecurityCheckScript.tsx
+  var import_react6 = __toESM(require_react());
+
+  // static/react/components/auth/LoginPresenter.tsx
+  var import_react5 = __toESM(require_react());
   var import_jsx_runtime12 = __toESM(require_jsx_runtime());
+  var LoginPresenter = (props) => {
+    const { login } = props;
+    const navigate = useNavigate();
+    const [username, setUsername] = (0, import_react5.useState)();
+    const [password, setPassword] = (0, import_react5.useState)();
+    return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("h1", { children: "Login Page" }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("p", { children: "You need to log in. (hint: try fred/password)" }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("label", { htmlFor: "username", children: "Username:" }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+        "input",
+        {
+          id: "username",
+          name: "username",
+          type: "text",
+          value: username,
+          onChange: (evt) => setUsername(evt.target.value)
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("br", {}),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("label", { htmlFor: "password", children: "Password:" }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+        "input",
+        {
+          id: "password",
+          name: "password",
+          type: "password",
+          value: password,
+          onChange: (evt) => setPassword(evt.target.value)
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("br", {}),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("button", { onClick: () => login(username, password), children: "Login" }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("button", { onClick: () => navigate("/events"), children: "Back" })
+    ] });
+  };
+  var LoginPresenter_default = LoginPresenter;
+
+  // static/react/components/auth/SecurityCheckScript.tsx
+  var import_jsx_runtime13 = __toESM(require_jsx_runtime());
+  var SecurityCheckScript = (props) => {
+    const [loggedIn, setLoggedIn] = (0, import_react6.useState)(false);
+    const params = useParams();
+    const navigate = useNavigate();
+    const login = (username, password) => {
+      if (username === "bersen" && password === "bersen") {
+        setLoggedIn(true);
+      }
+    };
+    const logout = () => {
+      setLoggedIn(false);
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_jsx_runtime13.Fragment, { children: loggedIn ? /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Outlet, {}) : /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(LoginPresenter_default, { login }) });
+  };
+  var SecurityCheckScript_default = SecurityCheckScript;
+
+  // static/react/AuthLayout.tsx
+  var import_jsx_runtime14 = __toESM(require_jsx_runtime());
+  var AuthLayout = (props) => {
+    return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(SecurityCheckScript_default, {});
+  };
+  var AuthLayout_default = AuthLayout;
+
+  // static/react/App.tsx
+  var import_jsx_runtime15 = __toESM(require_jsx_runtime());
   function App() {
-    return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)(Routes, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)(Route, { path: "/events", element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(RootLayout_default, {}), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Route, { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(HomePage_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Route, { path: ":id", element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(EventScript_default, {}) })
+    return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Routes, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Route, { path: "/events", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(RootLayout_default, {}), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(HomePage_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: ":id", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(EventScript_default, {}) })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Route, { path: "/events/add", element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(EventAddScript_default, {}) }),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Route, { path: "/events/delete/:id", element: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(EventDeleteScript_default, {}) })
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Route, { path: "/events/auth", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(AuthLayout_default, {}), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "add", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(EventAddScript_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "delete/:id", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(EventDeleteScript_default, {}) })
+      ] })
     ] });
   }
   var App_default = App;
 
   // static/react/main.tsx
-  var import_jsx_runtime13 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime16 = __toESM(require_jsx_runtime());
   var root = import_client.default.createRoot(document.getElementById("root"));
   root.render(
-    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(App_default, {}) })
+    /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(App_default, {}) })
   );
 })();
 /*! Bundled license information:

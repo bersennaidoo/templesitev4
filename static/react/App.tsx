@@ -13,6 +13,7 @@ import HomePage from "./pages/HomePage";
 import EventScript from "./pages/EventScript";
 import EventAddScript from "./pages/EventAddScript";
 import EventDeleteScript from "./pages/EventDeleteScript";
+import AuthLayout from "./AuthLayout";
 
 /*const router = createBrowserRouter([
   {
@@ -36,8 +37,10 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path=":id" element={<EventScript />} />
       </Route>
-      <Route path="/events/add" element={<EventAddScript />} />
-      <Route path="/events/delete/:id" element={<EventDeleteScript />} />
+      <Route path="/events/auth" element={<AuthLayout />}>
+        <Route path="add" element={<EventAddScript />} />
+        <Route path="delete/:id" element={<EventDeleteScript />} />
+      </Route>
     </Routes>
   );
 }

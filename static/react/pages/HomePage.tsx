@@ -18,13 +18,6 @@ const HomePage: FC<HomePageProps> = (props: HomePageProps) => {
             aliquid recusandae veritatis quasi voluptatibus impedit optio
             provident delectus velit aspernatur soluta natus laborum.
           </p>
-          <div className="d-flex justify-content-between">
-          <button type="button" className="btn btn-primary btn-sm">
-            <Link to="/events/add" className="text-white">
-              Add Event
-            </Link>
-          </button>
-          </div> 
         </div>
       </div>
     </div>

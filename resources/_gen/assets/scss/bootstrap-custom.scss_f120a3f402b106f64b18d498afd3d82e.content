@@ -11916,7 +11916,14 @@ textarea.form-control-lg {
     margin-block-end: 2rem; }
 
 body {
+  border-width: 5px;
+  border-style: solid;
+  border-color: #DAA520;
   background-image: url(/img/main-bg-1.png);
   background-repeat: repeat;
   background-position: center;
   background-size: 200px 200px; }
+
+.delete-evt {
+  padding-block-start: 30px;
+  block-size: 1000px; }
