@@ -27775,13 +27775,13 @@
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   var EventListPresenter = (props) => {
     const { events } = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "container mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "row", children: events.map((evt, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "col-sm-12 col-md-4 event-list p-4", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "container bg-primary-200 c-message mb-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "row", children: events.map((evt, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "col-sm-12 col-md-4", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: evt.name }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: evt.image, className: "img-fluid" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: evt.summary }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "d-flex justify-content-between", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: `/events/${evt.id}`, className: "text-white", children: "View Event" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "/events/auth/add", className: "text-white", children: "Add Event" }) })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { type: "button", className: "btn btn-primary btn-md", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "/events/auth/add", className: "text-white", children: "Add Event" }) })
       ] })
     ] }, i)) }) });
   };
@@ -27807,7 +27807,7 @@
   var import_jsx_runtime3 = __toESM(require_jsx_runtime());
   var RootLayout = (props) => {
     return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
         "div",
         {
           className: "container-fluid page-header py-5 mb-5 wow fadeIn",
@@ -27828,9 +27828,9 @@
             ] }) })
           ] })
         }
-      ) }),
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container bg-primary-500 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(EventListScript_default, {}) }) }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("main", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Outlet, {}) }) }) })
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(EventListScript_default, {}) }) }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Outlet, {}) }) }) })
     ] });
   };
   var RootLayout_default = RootLayout;
@@ -27839,11 +27839,11 @@
   var import_jsx_runtime4 = __toESM(require_jsx_runtime());
   var HomePage = (props) => {
     const {} = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "container bg-primary-500 p-3 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "col-sm-12", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "container bg-primary-200 c-message", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "col-sm-12", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h1", { children: "Your Events !" }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("img", { src: "/img/stub/temple-events.png", className: "img-fluid" }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "d-flex justify-content-between", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { type: "button", className: "btn btn-primary btn-sm", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Link, { to: "/events/auth/add", className: "text-white", children: "Add Event" }) }) })
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { type: "button", className: "btn btn-primary btn-md", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Link, { to: "/events/auth/add", className: "text-white", children: "Add Event" }) }) })
     ] }) }) });
   };
   var HomePage_default = HomePage;
@@ -27856,7 +27856,7 @@
   var import_jsx_runtime5 = __toESM(require_jsx_runtime());
   var EventPresenter = (props) => {
     const { event } = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "container event-list p-3 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "col-sm-12", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "container bg-primary-200 c-message p-3 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "col-sm-12", children: [
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h1", { children: event?.name }),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("img", { src: event?.image, className: "img-fluid" }),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: event?.description }),
@@ -27903,7 +27903,8 @@
       onDescriptionChange,
       onSummaryChange
     } = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "container event-list p-3 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "row justify-content-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("form", { onSubmit: onSubmitHandler, children: [
+    const navigate = useNavigate();
+    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "container bg-primary-200 c-message p-3 mt-5 mb-3", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "row justify-content-center", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("form", { onSubmit: onSubmitHandler, children: [
       /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "mb-3", children: [
         /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("label", { htmlFor: "exampleFormControlInput1", className: "form-label", children: "Event Name:" }),
         /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
@@ -27912,9 +27913,10 @@
             value: name,
             onChange: onNameChange,
             type: "text",
-            className: "form-control",
+            className: "form-control bg-primary-200",
             id: "exampleFormControlInput1",
-            name: "Event Name"
+            name: "Event Name",
+            required: true
           }
         )
       ] }),
@@ -27926,9 +27928,10 @@
             value: date,
             onChange: onDateChange,
             type: "text",
-            className: "form-control",
+            className: "form-control bg-primary-200",
             id: "exampleFormControlInput1",
-            name: "Date"
+            name: "Date",
+            required: true
           }
         )
       ] }),
@@ -27940,9 +27943,10 @@
             value: summary,
             onChange: onSummaryChange,
             type: "text",
-            className: "form-control",
+            className: "form-control bg-primary-200",
             id: "exampleFormControlInput1",
-            name: "Summary"
+            name: "Summary",
+            required: true
           }
         )
       ] }),
@@ -27960,13 +27964,17 @@
           {
             value: description,
             onChange: onDescriptionChange,
-            className: "form-control",
+            className: "form-control bg-primary-200",
             id: "exampleFormControlTextarea1",
-            rows: 3
+            rows: 5,
+            required: true
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", { className: "btn btn-primary btn-lg", children: "Submit" })
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", { className: "btn btn-secondary btn-lg me-3", children: "Submit" }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", { onClick: () => navigate("/events"), className: "btn btn-outline-secondary btn-lg", children: "Cancel" })
+      ] })
     ] }) }) }) });
   };
   var EventAddPresenter_default = EventAddPresenter;
@@ -28028,7 +28036,7 @@
   var EventDeletePresenter = (props) => {
     const { id, onDelete } = props;
     const navigate = useNavigate();
-    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "container bg-primary-400 delete-evt mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "row justify-content-center p-3", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "container bg-primary-200 c-message delete-evt mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "row justify-content-center p-3", children: [
       /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h5", { className: "", children: "Delete Event" }) }),
       /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { children: "Please Confirm." }) }),
       /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-sm-12", children: [
@@ -28044,7 +28052,7 @@
   var EventSuccessPresenter = (props) => {
     const { closeSuccess } = props;
     const navigate = useNavigate();
-    return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "container delete-evt mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "alert alert-success p-3", role: "alert", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "container bg-primary-200 c-message delete-evt mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "alert alert-success p-3", role: "alert", children: [
       /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("h3", { children: "Success!" }),
       /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
         "button",
@@ -28109,7 +28117,8 @@
                 type: "text",
                 value: username,
                 onChange: (evt) => setUsername(evt.target.value),
-                className: "form-control bg-primary-200"
+                className: "form-control bg-primary-200",
+                required: true
               }
             )
           ] }),
@@ -28123,7 +28132,8 @@
                 type: "password",
                 value: password,
                 onChange: (evt) => setPassword(evt.target.value),
-                className: "form-control bg-primary-200"
+                className: "form-control bg-primary-200",
+                required: true
               }
             )
           ] })
@@ -28142,7 +28152,7 @@
             {
               className: "btn btn-outline-secondary btn-lg",
               onClick: () => navigate("/events"),
-              children: "Back"
+              children: "Cancel"
             }
           )
         ] }) }) })
@@ -28169,7 +28179,7 @@
   };
   var SecurityCheckScript_default = SecurityCheckScript;
 
-  // static/react/AuthLayout.tsx
+  // static/react/components/auth/AuthLayout.tsx
   var import_jsx_runtime14 = __toESM(require_jsx_runtime());
   var AuthLayout = (props) => {
     return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(SecurityCheckScript_default, {});

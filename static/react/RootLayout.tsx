@@ -9,7 +9,6 @@ type RootLayoutProps = {};
 const RootLayout: FC<RootLayoutProps> = (props: RootLayoutProps) => {
   return (
     <>
-      <div className="">
         <div
           className="container-fluid page-header py-5 mb-5 wow fadeIn"
           data-wow-delay="0.1s"
@@ -36,8 +35,7 @@ const RootLayout: FC<RootLayoutProps> = (props: RootLayoutProps) => {
             </nav>
           </div>
         </div>
-      </div>
-      <div className="container bg-primary-500 mt-3">
+      <div className="container mt-3">
         <div className="row">
           <div className="col-sm-12">
             <EventListScript />
@@ -46,9 +44,9 @@ const RootLayout: FC<RootLayoutProps> = (props: RootLayoutProps) => {
       </div>
       <div className="container">
         <div className="row">
-          <main className="col-sm-12">
+          <div className="col-sm-12">
             <Outlet />
-          </main>
+          </div>
         </div>
       </div>
     </>

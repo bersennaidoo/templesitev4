@@ -13,22 +13,7 @@ import HomePage from "./pages/HomePage";
 import EventScript from "./pages/EventScript";
 import EventAddScript from "./pages/EventAddScript";
 import EventDeleteScript from "./pages/EventDeleteScript";
-import AuthLayout from "./AuthLayout";
-
-/*const router = createBrowserRouter([
-  {
-    path: '/events',
-    element: <RootLayout />,
-    children: [
-      { path: "/events", element: <HomePage /> },
-    ],
-  },
-]);*/
-
-/*
-<>
-    <RouterProvider router={router} />
-</>*/
+import AuthLayout from "./components/auth/AuthLayout";
 
 function App() {
   return (

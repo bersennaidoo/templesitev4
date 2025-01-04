@@ -1,5 +1,5 @@
 import React, { ChangeEvent, FC } from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet, Link, useNavigate } from "react-router-dom";
 import { Event } from "../domain/models/eventModel";
 
 type EventAddPresenterProps = {
@@ -33,8 +33,10 @@ const EventAddPresenter: FC<EventAddPresenterProps> = (
     onSummaryChange,
   } = props;
 
+  const navigate = useNavigate()
+
   return (
-    <div className="container event-list p-3 mt-3">
+    <div className="container bg-primary-200 c-message p-3 mt-5 mb-3">
       <div className="row justify-content-center">
         <div className="col-sm-6">
           <form onSubmit={onSubmitHandler}>
@@ -46,9 +48,10 @@ const EventAddPresenter: FC<EventAddPresenterProps> = (
                 value={name}
                 onChange={onNameChange}
                 type="text"
-                className="form-control"
+                className="form-control bg-primary-200"
                 id="exampleFormControlInput1"
                 name="Event Name"
+                required
               />
             </div>
             <div className="mb-3">
@@ -59,9 +62,10 @@ const EventAddPresenter: FC<EventAddPresenterProps> = (
                 value={date}
                 onChange={onDateChange}
                 type="text"
-                className="form-control"
+                className="form-control bg-primary-200"
                 id="exampleFormControlInput1"
                 name="Date"
+                required
               />
             </div>
             <div className="mb-3">
@@ -72,9 +76,10 @@ const EventAddPresenter: FC<EventAddPresenterProps> = (
                 value={summary}
                 onChange={onSummaryChange}
                 type="text"
-                className="form-control"
+                className="form-control bg-primary-200"
                 id="exampleFormControlInput1"
                 name="Summary"
+                required
               />
             </div>
             <div className="mb-3">
@@ -87,12 +92,16 @@ const EventAddPresenter: FC<EventAddPresenterProps> = (
               <textarea
                 value={description}
                 onChange={onDescriptionChange}
-                className="form-control"
+                className="form-control bg-primary-200"
                 id="exampleFormControlTextarea1"
-                rows={3}
+                rows={5}
+                required
               />
             </div>
-            <button className="btn btn-primary btn-lg">Submit</button>
+            <div>
+            <button className="btn btn-secondary btn-lg me-3">Submit</button>
+            <button onClick={() => navigate("/events") } className="btn btn-outline-secondary btn-lg">Cancel</button>
+            </div> 
           </form>
         </div>
       </div>

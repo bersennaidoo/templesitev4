@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  {{ partial "head.html" . }}
-</head>
-<body class="">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="">
     {{ partial "headerp/headerp.html" . }}
-    <main class="c-base">
-    {{ block "main" . }}{{ end }}
+    <main class="container c-base mb-3">
+      <div class="row">
+        <div class="col-sm-12">{{ block "main" . }}{{ end }}</div>
+      </div>
     </main>
     {{ partial "footerp/footerp.html" . }}
-</body>
+  </body>
 </html>

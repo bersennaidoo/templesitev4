@@ -7,7 +7,7 @@ const HomePage: FC<HomePageProps> = (props: HomePageProps) => {
   const {} = props;
 
   return (
-    <div className="container bg-primary-500 p-3 mt-3">
+    <div className="container bg-primary-200 c-message">
       <div className="row">
         <div className="col-sm-12">
           <h1>Your Events !</h1>
@@ -18,8 +18,8 @@ const HomePage: FC<HomePageProps> = (props: HomePageProps) => {
             aliquid recusandae veritatis quasi voluptatibus impedit optio
             provident delectus velit aspernatur soluta natus laborum.
           </p>
-          <div className="d-flex justify-content-between">
-            <button type="button" className="btn btn-primary btn-sm">
+          <div>
+            <button type="button" className="btn btn-primary btn-md">
               <Link to="/events/auth/add" className="text-white">
                 Add Event
               </Link>

@@ -13,7 +13,7 @@ const EventSuccessPresenter: FC<EventSuccessPresenterProps> = (
   const navigate = useNavigate();
 
   return (
-    <div className="container delete-evt mt-3">
+    <div className="container bg-primary-200 c-message delete-evt mt-3">
       <div className="alert alert-success p-3" role="alert">
         <h3>Success!</h3>
         <button

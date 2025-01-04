@@ -23,6 +23,7 @@ const LoginPresenter = (props: any) => {
               value={username}
               onChange={(evt) => setUsername(evt.target.value)}
               className="form-control bg-primary-200"
+              required
             />
           </div>
           <div className="mb-3">
@@ -36,6 +37,7 @@ const LoginPresenter = (props: any) => {
               value={password}
               onChange={(evt) => setPassword(evt.target.value)}
               className="form-control bg-primary-200"
+              required
             />
           </div>
         </div>
@@ -52,7 +54,7 @@ const LoginPresenter = (props: any) => {
                 className="btn btn-outline-secondary btn-lg"
                 onClick={() => navigate("/events")}
               >
-                Back
+                Cancel
               </button>
             </div>
           </div>
