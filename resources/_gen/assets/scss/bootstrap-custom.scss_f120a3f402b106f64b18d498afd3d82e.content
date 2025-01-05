@@ -11896,7 +11896,7 @@ textarea.form-control-lg {
   border-color: #DAA520; }
 
 .c-base {
-  padding-top: 135px; }
+  margin-top: 9rem; }
 
 .c-message {
   border-width: 3px;
