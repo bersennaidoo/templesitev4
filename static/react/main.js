@@ -27780,8 +27780,17 @@
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "card-body", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { className: "card-title", children: event.name }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "card-text", children: event.summary }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: `/events/${event.id}`, className: "btn btn-secondary text-white me-3", children: "View Event" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "/events/auth/add", className: "btn btn-secondary text-white", children: "Add Event" })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "d-flex justify-content-start", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+            Link,
+            {
+              to: `/events/${event.id}`,
+              className: "btn btn-secondary text-white me-3 card-btn",
+              children: "View Event"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "/events/auth/add", className: "btn btn-secondary text-white", children: "Add Event" })
+        ] })
       ] })
     ] });
   };
