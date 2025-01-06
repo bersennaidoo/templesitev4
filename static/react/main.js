@@ -27858,8 +27858,9 @@
     const {} = props;
     return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "container bg-primary-200 c-message", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "col-sm-12 p-4", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "d-md-flex gap-4", children: [
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("img", { src: "/img/stub/temple-events.png", className: "img-fluid" }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "d-md-flex flex-md-column", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h1", { children: "Your Events !" }),
+      /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "d-md-flex flex-md-column bg-white p-5", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h1", { className: "fw-bold", style: { fontFamily: "cursive" }, children: "Temple Events !" }),
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("img", { src: "/img/stub/line.png", className: "img-fluid mb-3" }),
         /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." }),
         /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { type: "button", className: "btn btn-secondary btn-lg", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Link, { to: "/events/auth/add", className: "text-white text-decoration-none", children: "Add Event" }) }) })
       ] })
@@ -27877,8 +27878,9 @@
     const { event } = props;
     return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "container bg-primary-200 c-message p-3 mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "d-md-flex gap-4", children: [
       /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("img", { src: event?.image, className: "img-fluid" }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "d-md-flex flex-md-column", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "d-md-flex flex-md-column bg-white p-5", children: [
         /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("h1", { children: event?.name }),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("img", { src: "/img/stub/line.png", className: "img-fluid mb-3" }),
         /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { children: event?.description }),
         /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { children: event?.date }),
         /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { type: "button", className: "btn btn-secondary btn-lg", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(

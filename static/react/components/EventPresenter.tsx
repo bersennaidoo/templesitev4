@@ -17,8 +17,9 @@ const EventPresenter: FC<EventPresenterProps> = (
         <div className="col-sm-12">
           <div className="d-md-flex gap-4">
             <img src={event?.image} className="img-fluid" />
-            <div className="d-md-flex flex-md-column">
+            <div className="d-md-flex flex-md-column bg-white p-5">
               <h1>{event?.name}</h1>
+              <img src="/img/stub/line.png" className="img-fluid mb-3" />
               <p>{event?.description}</p>
               <p>{event?.date}</p>
               <div>

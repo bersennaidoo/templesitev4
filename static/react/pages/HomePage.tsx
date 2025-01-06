@@ -12,8 +12,9 @@ const HomePage: FC<HomePageProps> = (props: HomePageProps) => {
         <div className="col-sm-12 p-4">
           <div className="d-md-flex gap-4">
             <img src="/img/stub/temple-events.png" className="img-fluid" />
-            <div className="d-md-flex flex-md-column">
-              <h1>Your Events !</h1>
+            <div className="d-md-flex flex-md-column bg-white p-5">
+              <h1 className="fw-bold" style={{fontFamily: "cursive"}}>Temple Events !</h1>
+              <img src="/img/stub/line.png" className="img-fluid mb-3" />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 repellendus tenetur sapiente accusantium labore praesentium
