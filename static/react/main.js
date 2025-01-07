@@ -27866,10 +27866,10 @@
             className: "img-fluid border-img"
           }
         ) }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h1", { className: "", children: "Temple Events !" }),
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h1", { className: "text-center", children: "Temple Events !" }),
         /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("img", { src: "/img/stub/line.png", className: "img-fluid mb-3" }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { type: "button", className: "btn btn-secondary btn-lg", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Link, { to: "/events/auth/add", className: "text-white text-decoration-none", children: "Add Event" }) }) })
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { className: "text-center", children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." }),
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { type: "button", className: "btn btn-secondary btn-lg", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Link, { to: "/events/auth/add", className: "text-white text-decoration-none", children: "Add Event" }) }) })
       ] })
     ] }) }) }) });
   };
@@ -27893,11 +27893,11 @@
             className: "img-fluid border-img"
           }
         ) }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("h1", { children: event?.name }),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("h1", { className: "text-center", children: event?.name }),
         /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("img", { src: "/img/stub/line.png", className: "img-fluid mb-3" }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { children: event?.description }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { children: event?.date }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { type: "button", className: "btn btn-secondary btn-lg", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { className: "text-center", children: event?.description }),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { className: "text-center", children: event?.date }),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { type: "button", className: "btn btn-secondary btn-lg", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
           Link,
           {
             to: `/events/auth/delete/${event?.id}`,

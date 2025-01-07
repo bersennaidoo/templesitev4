@@ -24,11 +24,11 @@ const EventPresenter: FC<EventPresenterProps> = (
               className="img-fluid border-img"
             />
           </h1>
-              <h1>{event?.name}</h1>
+              <h1 className="text-center">{event?.name}</h1>
               <img src="/img/stub/line.png" className="img-fluid mb-3" />
-              <p>{event?.description}</p>
-              <p>{event?.date}</p>
-              <div>
+              <p className="text-center">{event?.description}</p>
+              <p className="text-center">{event?.date}</p>
+              <div className="text-center">
                 <button type="button" className="btn btn-secondary btn-lg">
                   <Link
                     to={`/events/auth/delete/${event?.id}`}

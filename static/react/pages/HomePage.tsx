@@ -19,15 +19,15 @@ const HomePage: FC<HomePageProps> = (props: HomePageProps) => {
               className="img-fluid border-img"
             />
           </h1>
-              <h1 className="">Temple Events !</h1>
+              <h1 className="text-center">Temple Events !</h1>
               <img src="/img/stub/line.png" className="img-fluid mb-3" />
-              <p>
+              <p className="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 repellendus tenetur sapiente accusantium labore praesentium
                 odio, aliquid recusandae veritatis quasi voluptatibus impedit
                 optio provident delectus velit aspernatur soluta natus laborum.
               </p>
-              <div>
+              <div className="text-center">
                 <button type="button" className="btn btn-secondary btn-lg">
                   <Link to="/events/auth/add" className="text-white text-decoration-none">
                     Add Event
