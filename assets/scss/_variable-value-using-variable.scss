@@ -39,8 +39,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 $body-bg: $primary;
 $body-color: darken($primary, 100%);
 
-$font-family-base: 'Bodoni Book', serif;
+$font-family-base: 'open_sansregular', san-serif;
 $font-size-base: 1.125rem;
 $line-height-base: 1.5;
 
-$headings-font-family: Helvetica, sans-serif;
+$headings-font-family: 'shojumaruregular', 'cursive';

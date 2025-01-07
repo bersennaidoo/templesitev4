@@ -125,5 +125,24 @@ body {
   }
 }*/
 
+.form-label {
+  font-family: "shojumaruregular";
+}
+
+.border-image-panel {
+  border: 2px solid;
+  border-image-source: url(/img/dividers/aum-grid.svg);
+  border-image-width: 20px;
+  border-image-slice: 33.3333%;
+  border-image-repeat: round;
+  padding: 12px;
+}
+
+.border-img {
+  border: 2px solid $secondary;
+  border-radius: 100%;
+  padding: 2rem;
+}
+
 
 

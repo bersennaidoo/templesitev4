@@ -9,7 +9,7 @@ const LoginPresenter = (props: any) => {
 
   return (
     <div className="container bg-secondary-200 c-message mt-5 mb-5">
-      <h1 className="text-center mt-3" style={{fontFamily: "cursive"}}>Login Page</h1>
+      <h1 className="text-center mt-3">Login Page</h1>
       <div className="row justify-content-center">
         <div className="col-sm-6">
           <div className="mb-3">
