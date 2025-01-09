@@ -11917,7 +11917,7 @@ textarea.form-control-lg {
   border-color: #DAA520; }
 
 .c-base {
-  margin-top: 9rem; }
+  margin-top: 6rem; }
 
 .c-message {
   border-width: 3px;
@@ -12023,7 +12023,7 @@ body {
 
 .cirkle,
 .cirkle2 {
-  background: url(/img/dividers/aum-circle3.svg); }
+  background: url(/img/dividers/aum-circle4.svg); }
 
 .cirkle {
   width: 40px;
@@ -12035,6 +12035,15 @@ body {
   animation: turn 3s infinite linear;
   box-shadow: 20px 20px red, -20px -20px orange, -20px 20px green, 20px -20px #87ceeb; }
 
+/*.cirkle2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 26px;
+  left: 82.8%;
+  margin: 0 0 0 -288px;
+  animation: turn 2s infinite linear;
+}*/
 .cirkle2 {
   width: 150px;
   height: 150px;
@@ -12043,3 +12052,105 @@ body {
   left: 82.8%;
   margin: 0 0 0 -288px;
   animation: turn 2s infinite linear; }
+
+.c-item {
+  position: relative; }
+
+.temple-bg {
+  background-image: url(/img/stub/temple-1109x400.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*.temple-bg {
+  width: 1200px;
+  height: 485px;
+  position: absolute;
+  top: 6.5px;
+  left: 26%;
+  margin: 0 0 0 -288px;
+}
+
+.temple-script {
+  margin-block-start: -17rem;
+}
+
+.c-banner {
+  block-size: 500px;
+}*/
+.animate {
+  animation-duration: 6s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards; }
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media (min-width: 576px) {
+  .c-base {
+    margin-top: 7.5rem; }
+  .c-banner {
+    block-size: 240px; }
+  .temple-bg {
+    width: 500px;
+    height: 230px;
+    position: absolute;
+    top: 5.5px;
+    left: 57%;
+    margin: 0 0 0 -288px; }
+  .temple-script {
+    margin-block-start: -6.5rem; }
+  .fs-sm {
+    font-size: 1.3rem; } }
+
+@media (min-width: 768px) {
+  .c-base {
+    margin-top: 7.5rem; }
+  .c-banner {
+    block-size: 320px; }
+  .temple-bg {
+    width: 688px;
+    height: 310px;
+    position: absolute;
+    top: 5.5px;
+    left: 42%;
+    margin: 0 0 0 -288px; }
+  .temple-script {
+    margin-block-start: -8.5rem; }
+  .fs-sm {
+    font-size: 1.5rem; } }
+
+@media (min-width: 992px) {
+  .c-base {
+    margin-top: 7.5rem; }
+  .c-banner {
+    block-size: 420px; }
+  .temple-bg {
+    width: 930px;
+    height: 410px;
+    position: absolute;
+    top: 5.5px;
+    left: 31%;
+    margin: 0 0 0 -288px; }
+  .temple-script {
+    margin-block-start: -12.5rem; }
+  .fs-sm {
+    font-size: 1.9rem; } }
+
+@media (min-width: 1200px) {
+  .temple-bg {
+    width: 1109px;
+    height: 485px;
+    position: absolute;
+    top: 6.5px;
+    left: 26%;
+    margin: 0 0 0 -288px; }
+  .temple-script {
+    margin-block-start: -17rem; }
+  .c-banner {
+    block-size: 500px; }
+  .fs-sm {
+    font-size: 2.1rem; } }

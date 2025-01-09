@@ -1,0 +1,26 @@
+function runTypingEffect() {
+    const text = 'Shree Kamatcheeammen Temple';
+    const typingElement = document.getElementById('typing-text');
+    const typingDelay = 100;
+  
+    typeText(text, typingElement, typingDelay);
+  }
+
+  function runTypingTamilEffect() {
+    const text = 'ச்ரீ காமாட்சி அம்மன் கோயில்';
+    const typingElement = document.getElementById('typing-text-tamil');
+    const typingDelay = 100;
+  
+    typeText(text, typingElement, typingDelay);
+  }
+  
+  function typeText(text, typingElement, delay) {
+    for (let i = 0; i < text.length; i++) {
+      setTimeout(() => {
+        typingElement.textContent += text.charAt(i);
+      }, delay * i);
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', runTypingEffect);
+  document.addEventListener('DOMContentLoaded', runTypingTamilEffect);
