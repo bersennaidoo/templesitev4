@@ -34,7 +34,7 @@
 }
 
 .c-base {
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
 .c-message {
@@ -205,22 +205,26 @@ body {
   background-size: cover;
 }
 
-/*.temple-bg {
-  width: 1200px;
-  height: 485px;
+.temple-bg {
+  width: 312px;
+  height: 138px;
   position: absolute;
   top: 6.5px;
-  left: 26%;
+  left: 92%;
   margin: 0 0 0 -288px;
 }
 
 .temple-script {
-  margin-block-start: -17rem;
+  margin-block-start: -4rem;
+}
+
+.fs-sm {
+  font-size: 0.8rem;
 }
 
 .c-banner {
-  block-size: 500px;
-}*/
+  block-size: 150px;
+}
 
 .animate {
   animation-duration: 6s;
