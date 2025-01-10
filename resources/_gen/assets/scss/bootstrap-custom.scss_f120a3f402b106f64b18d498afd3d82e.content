@@ -233,7 +233,7 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: "open_sansregular", san-serif;
-  --bs-body-font-size: 1.125rem;
+  --bs-body-font-size: 1.025rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: black;
@@ -367,37 +367,39 @@ hr {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-family: "shojumaruregular", "cursive";
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.25;
   color: var(--bs-heading-color); }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw); }
+  font-size: calc(1.3327675rem + 0.99321vw); }
   @media (min-width: 1200px) {
     h1, .h1 {
-      font-size: 2.5rem; } }
+      font-size: 2.077675rem; } }
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw); }
+  font-size: calc(1.309705rem + 0.71646vw); }
   @media (min-width: 1200px) {
     h2, .h2 {
-      font-size: 2rem; } }
+      font-size: 1.84705rem; } }
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw); }
+  font-size: calc(1.289205rem + 0.47046vw); }
   @media (min-width: 1200px) {
     h3, .h3 {
-      font-size: 1.75rem; } }
+      font-size: 1.64205rem; } }
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw); }
+  font-size: calc(1.27096rem + 0.25152vw); }
   @media (min-width: 1200px) {
     h4, .h4 {
-      font-size: 1.5rem; } }
+      font-size: 1.4596rem; } }
 h5, .h5 {
-  font-size: 1.25rem; }
-
+  font-size: calc(1.254765rem + 0.05718vw); }
+  @media (min-width: 1200px) {
+    h5, .h5 {
+      font-size: 1.29765rem; } }
 h6, .h6 {
-  font-size: 1rem; }
+  font-size: 1.153125rem; }
 
 p {
   margin-top: 0;
@@ -662,51 +664,53 @@ progress {
   display: none !important; }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: calc(1.253125rem + 0.0375vw);
   font-weight: 300; }
-
+  @media (min-width: 1200px) {
+    .lead {
+      font-size: 1.28125rem; } }
 .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
+  font-size: calc(1.43665125rem + 2.239815vw);
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
   @media (min-width: 1200px) {
     .display-1 {
-      font-size: 5rem; } }
+      font-size: 3.1165125rem; } }
 .display-2 {
-  font-size: calc(1.575rem + 3.9vw);
+  font-size: calc(1.4020575rem + 1.82469vw);
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
   @media (min-width: 1200px) {
     .display-2 {
-      font-size: 4.5rem; } }
+      font-size: 2.770575rem; } }
 .display-3 {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: calc(1.3713075rem + 1.45569vw);
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
   @media (min-width: 1200px) {
     .display-3 {
-      font-size: 4rem; } }
+      font-size: 2.463075rem; } }
 .display-4 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.34394rem + 1.12728vw);
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
   @media (min-width: 1200px) {
     .display-4 {
-      font-size: 3.5rem; } }
+      font-size: 2.1894rem; } }
 .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
+  font-size: calc(1.3196475rem + 0.83577vw);
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
   @media (min-width: 1200px) {
     .display-5 {
-      font-size: 3rem; } }
+      font-size: 1.946475rem; } }
 .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.29796875rem + 0.575625vw);
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
   @media (min-width: 1200px) {
     .display-6 {
-      font-size: 2.5rem; } }
+      font-size: 1.7296875rem; } }
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
@@ -4838,7 +4842,7 @@ textarea.form-control-lg {
   align-items: center;
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-  font-size: 1.125rem;
+  font-size: 1.025rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;
   background-color: var(--bs-accordion-btn-bg);
@@ -11995,6 +11999,10 @@ body {
     margin-bottom: 0rem;
   }
 }*/
+.c-header__link {
+  font-family: 'shojumaruregular';
+  font-size: 0.9rem; }
+
 .form-label {
   font-family: "shojumaruregular"; }
 
@@ -12004,14 +12012,14 @@ body {
   border-image-width: 20px;
   border-image-slice: 33.3333%;
   border-image-repeat: round;
-  padding: 12px;
+  padding: 5rem;
   position: relative; }
 
-/*.border-img {
-  border: 2px solid $secondary;
+.border-img {
+  border: 2px solid #DAA520;
   border-radius: 100%;
-  padding: 2rem;
-}*/
+  padding: 2rem; }
+
 .copyright {
   margin-block-start: -2.25rem; }
 
@@ -12023,7 +12031,7 @@ body {
 
 .cirkle,
 .cirkle2 {
-  background: url(/img/dividers/aum-circle4.svg); }
+  background: url(/img/dividers/aum-circle6.svg); }
 
 .cirkle {
   width: 40px;
@@ -12045,11 +12053,11 @@ body {
   animation: turn 2s infinite linear;
 }*/
 .cirkle2 {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   position: absolute;
-  top: 26px;
-  left: 82.8%;
+  top: 49px;
+  left: 114.5%;
   margin: 0 0 0 -288px;
   animation: turn 2s infinite linear; }
 
@@ -12105,7 +12113,15 @@ body {
   .temple-script {
     margin-block-start: -6.5rem; }
   .fs-sm {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .cirkle2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 49px;
+    left: 94%;
+    margin: 0 0 0 -288px;
+    animation: turn 2s infinite linear; } }
 
 @media (min-width: 768px) {
   .c-base {
@@ -12122,7 +12138,15 @@ body {
   .temple-script {
     margin-block-start: -8.5rem; }
   .fs-sm {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .cirkle2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 49px;
+    left: 105%;
+    margin: 0 0 0 -288px;
+    animation: turn 2s infinite linear; } }
 
 @media (min-width: 992px) {
   .c-base {
@@ -12139,7 +12163,15 @@ body {
   .temple-script {
     margin-block-start: -12.5rem; }
   .fs-sm {
-    font-size: 1.9rem; } }
+    font-size: 1.9rem; }
+  .cirkle2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 49px;
+    left: 94%;
+    margin: 0 0 0 -288px;
+    animation: turn 2s infinite linear; } }
 
 @media (min-width: 1200px) {
   .temple-bg {
@@ -12154,4 +12186,14 @@ body {
   .c-banner {
     block-size: 500px; }
   .fs-sm {
-    font-size: 2.1rem; } }
+    font-size: 2.1rem; }
+  .c-base {
+    margin-top: 7.5rem; }
+  .cirkle2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 49px;
+    left: 82.1%;
+    margin: 0 0 0 -288px;
+    animation: turn 2s infinite linear; } }

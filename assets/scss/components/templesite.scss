@@ -125,6 +125,11 @@ body {
   }
 }*/
 
+.c-header__link {
+  font-family: 'shojumaruregular';
+  font-size: 0.9rem;
+}
+
 .form-label {
   font-family: "shojumaruregular";
 }
@@ -135,15 +140,15 @@ body {
   border-image-width: 20px;
   border-image-slice: 33.3333%;
   border-image-repeat: round;
-  padding: 12px;
+  padding: 5rem;
   position: relative;
 }
 
-/*.border-img {
+.border-img {
   border: 2px solid $secondary;
   border-radius: 100%;
   padding: 2rem;
-}*/
+}
 
 .copyright {
   margin-block-start: -2.25rem;
@@ -160,7 +165,7 @@ body {
 
 .cirkle,
 .cirkle2 {
-  background: url(/img/dividers/aum-circle4.svg);
+  background: url(/img/dividers/aum-circle6.svg);
 }
 
 .cirkle {
@@ -186,11 +191,11 @@ body {
 }*/
 
 .cirkle2 {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   position: absolute;
-  top: 26px;
-  left: 82.8%;
+  top: 49px;
+  left: 114.5%;
   margin: 0 0 0 -288px;
   animation: turn 2s infinite linear;
 }
@@ -263,6 +268,15 @@ body {
   .fs-sm {
     font-size: 1.3rem;
   }
+  .cirkle2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 49px;
+    left: 94%;
+    margin: 0 0 0 -288px;
+    animation: turn 2s infinite linear;
+  }
 }
 
 @media (min-width: 768px) {
@@ -285,6 +299,15 @@ body {
   }
   .fs-sm {
     font-size: 1.5rem;
+  }
+  .cirkle2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 49px;
+    left: 105%;
+    margin: 0 0 0 -288px;
+    animation: turn 2s infinite linear;
   }
 }
 
@@ -309,6 +332,15 @@ body {
   .fs-sm {
     font-size: 1.9rem;
   }
+  .cirkle2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 49px;
+    left: 94%;
+    margin: 0 0 0 -288px;
+    animation: turn 2s infinite linear;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -328,8 +360,20 @@ body {
   .c-banner {
     block-size: 500px;
   }
-   
+
   .fs-sm {
     font-size: 2.1rem;
+  }
+  .c-base {
+    margin-top: 7.5rem;
+  }
+  .cirkle2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 49px;
+    left: 82.1%;
+    margin: 0 0 0 -288px;
+    animation: turn 2s infinite linear;
   }
 }
