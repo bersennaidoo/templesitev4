@@ -11957,6 +11957,9 @@ body {
   padding-block-start: 30px;
   block-size: 1000px; }
 
+.god-shiva {
+  margin-inline-start: 4rem; }
+
 /*** Spinner Start ***/
 #spinner {
   opacity: 0;
@@ -12144,7 +12147,7 @@ body {
     height: 160px;
     position: absolute;
     top: 49px;
-    left: 105%;
+    left: 82%;
     margin: 0 0 0 -288px;
     animation: turn 2s infinite linear; } }
 
@@ -12169,7 +12172,7 @@ body {
     height: 160px;
     position: absolute;
     top: 49px;
-    left: 94%;
+    left: 73.3%;
     margin: 0 0 0 -288px;
     animation: turn 2s infinite linear; } }
 
@@ -12194,6 +12197,6 @@ body {
     height: 160px;
     position: absolute;
     top: 49px;
-    left: 82.1%;
+    left: 69.4%;
     margin: 0 0 0 -288px;
     animation: turn 2s infinite linear; } }
