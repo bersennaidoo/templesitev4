@@ -27896,7 +27896,7 @@
         /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("h1", { className: "text-center", children: event?.name }),
         /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("img", { src: "/img/stub/line.png", className: "img-fluid mb-3" }),
         /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { className: "text-center", children: event?.description }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { className: "text-center", children: event?.date }),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("span", { className: "badge rounded-pill bg-info text-dark fw-bold fs-5", children: event?.date }) }),
         /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { type: "button", className: "btn btn-secondary btn-lg", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
           Link,
           {

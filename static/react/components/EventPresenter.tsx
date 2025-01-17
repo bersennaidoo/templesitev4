@@ -18,16 +18,18 @@ const EventPresenter: FC<EventPresenterProps> = (
           <div className="d-md-flex gap-4">
             <img src={event?.image} className="img-fluid" />
             <div className="d-md-flex flex-md-column bg-white p-5 border-image-panel">
-            <h1 className="text-center mb-3">
-            <img
-              src="/img/dividers/aum-header.svg"
-              className="img-fluid border-img"
-            />
-          </h1>
+              <h1 className="text-center mb-3">
+                <img
+                  src="/img/dividers/aum-header.svg"
+                  className="img-fluid border-img"
+                />
+              </h1>
               <h1 className="text-center">{event?.name}</h1>
               <img src="/img/stub/line.png" className="img-fluid mb-3" />
               <p className="text-center">{event?.description}</p>
-              <p className="text-center">{event?.date}</p>
+              <p className="text-center">
+                <span className="badge rounded-pill bg-info text-dark fw-bold fs-5">{event?.date}</span>
+              </p>
               <div className="text-center">
                 <button type="button" className="btn btn-secondary btn-lg">
                   <Link
