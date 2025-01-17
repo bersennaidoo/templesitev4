@@ -59,6 +59,15 @@
     border-block-start-color: $secondary;
     margin-block-end: 2rem;
   }
+  &__divider1 {
+    border-block-start-width: 2px;
+    border-block-start-style: solid;
+    border-image-source: url(/img/dividers/divider1.svg);
+    border-image-width: 20px;
+    padding: 5rem;
+    position: relative;
+
+  }
 }
 
 body {

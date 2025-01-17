@@ -20,7 +20,7 @@ const HomePage: FC<HomePageProps> = (props: HomePageProps) => {
             />
           </h1>
               <h1 className="text-center">Temple Events !</h1>
-              <img src="/img/stub/line.png" className="img-fluid mb-3" />
+              <img src="/img/dividers/divider1.svg" className="img-fluid mb-3" />
               <p className="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 repellendus tenetur sapiente accusantium labore praesentium

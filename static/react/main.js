@@ -27867,7 +27867,7 @@
           }
         ) }),
         /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h1", { className: "text-center", children: "Temple Events !" }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("img", { src: "/img/stub/line.png", className: "img-fluid mb-3" }),
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("img", { src: "/img/dividers/divider1.svg", className: "img-fluid mb-3" }),
         /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { className: "text-center", children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus tenetur sapiente accusantium labore praesentium odio, aliquid recusandae veritatis quasi voluptatibus impedit optio provident delectus velit aspernatur soluta natus laborum." }),
         /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { type: "button", className: "btn btn-secondary btn-lg", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Link, { to: "/events/auth/add", className: "text-white text-decoration-none", children: "Add Event" }) }) })
       ] })
